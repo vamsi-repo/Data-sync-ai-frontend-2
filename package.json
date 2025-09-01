@@ -1,10 +1,9 @@
 {
   "scripts": {
     "dev": "vite",
-    "build": "vite build --logLevel debug",
-    "build:dev": "vite build --mode development",
+    "build": "echo 'Using pre-built dist folder'",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview", 
     "serve": "serve dist",
     "start": "serve -s dist -p $PORT"
   }
