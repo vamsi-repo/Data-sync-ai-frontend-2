@@ -1,0 +1,14 @@
+[phases.setup]
+   nixPkgs = ['nodejs', 'npm']
+
+   [phases.install]
+   cmds = ['npm ci']
+
+   [phases.build]
+   cmds = ['npm run build']
+
+   [phases.start]
+   cmds = ['npm run serve']
+
+   [staticAssets]
+   '/dist' = 'dist'
