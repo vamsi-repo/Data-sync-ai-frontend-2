@@ -1,14 +1,11 @@
 [phases.setup]
-   nixPkgs = ['nodejs', 'npm']
+nixPkgs = ['nodejs_18']
 
-   [phases.install]
-   cmds = ['npm ci']
+[phases.install]
+cmds = ['npm ci']
 
-   [phases.build]
-   cmds = ['npm run build']
+[phases.build]
+cmds = ['npm run build']
 
-   [phases.start]
-   cmds = ['npm run serve']
-
-   [staticAssets]
-   '/dist' = 'dist'
+[start]
+cmd = 'npm run serve'
